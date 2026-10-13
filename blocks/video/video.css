@@ -1,0 +1,35 @@
+/* video.css — styles for the video block */
+.video-block {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.video-block video {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: #000;
+}
+
+.video-controls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.video-controls button {
+  background: #1f6feb;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.video-controls button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
