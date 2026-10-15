@@ -1,0 +1,58 @@
+/* blocks/carousel/carousel.css
+   Basic responsive carousel styles for blocks carousel
+*/
+
+.blocks-carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.blocks-carousel .slides {
+  display: flex;
+  transition: transform 0.5s ease;
+  will-change: transform;
+}
+
+.blocks-carousel .slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.blocks-carousel .nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.45);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 0.6rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.blocks-carousel .nav.prev { left: 0.5rem; }
+.blocks-carousel .nav.next { right: 0.5rem; }
+
+.blocks-carousel .dots {
+  position: absolute;
+  left: 50%;
+  bottom: 0.5rem;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+}
+
+.blocks-carousel .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.5);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.blocks-carousel .dot.active {
+  background: #fff;
+}
